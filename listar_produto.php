@@ -7,6 +7,9 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
+
   <title>Listagem de produtos</title>
 </head>
 <body>
@@ -22,6 +25,7 @@
                           <th scope="col">Categoria</th>
                           <th scope="col">Quantidade</th>
                           <th scope="col">Fornecedor</th>
+                          <th scope="col">Ações</th>
                         </tr>
                       </thead>
                         <tr>
@@ -45,6 +49,8 @@
                           <td> <?php echo $categoria ?></td>
                           <td> <?php echo $quantidade ?></td>
                           <td> <?php echo $fornecedor ?></td>
+                          <td><a class="btn btn-primary btn-sm" href="editar_produto.php?id=<?php echo $id_estoque?> " role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
+
                           <?php } ?> <!-- fecha a chave depois das td para preencher as linhas --> 
                         </tr>
                     </table>

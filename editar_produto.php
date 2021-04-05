@@ -1,3 +1,9 @@
+<?php 
+include 'conexao.php';
+$id = $_GET['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,19 +33,32 @@
         <div class="container" id="container" style="margin-top: 40px">
                 <h4>Formulario de Cadastro</h4>
                   <form action="_inserir_produto.php" method="post" style="margin-top: 20px">
+                      <?php
+                      $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";
+
+                      $buscar= mysqli_query($conexao, $sql);
+                      while ($array = mysqli_fetch_array($buscar)) {
+                            $id_estoque = $array['id_estoque'];
+                            $nroproduto = $array['nroproduto'];
+                            $nomeproduto = $array['nomeproduto'];
+                            $categoria = $array['categoria'];
+                            $quantidade = $array['quantidade'];
+                            $fornecedor = $array['fornecedor'];
+                      
+                    ?>
                     <div class="form-group">
                       <label>Nº Produto</label>
-                      <input type="number" class="form-control" name="nroproduto" placeholder="Insira o numero do produto" required>
+                      <input type="number" class="form-control" name="nroproduto" value="<?php echo $nroproduto ?>" disabled>
                     </div>
 
                     <div class="form-group">
                       <label>Nome Produto</label>
-                      <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" required autocomplete="off">
+                      <input type="text" class="form-control" name="nomeproduto" value="<?php echo $nomeproduto ?>">
                     </div>
 
                     <div class="form-group">
                       <label>Categoria</label>
-                      <select class="form-control" name="categoria" required>
+                      <select class="form-control" name="categoria" value="<?php echo $categoria ?>">
                         <option>Perifericos</option>
                         <option>Hardware</option>
                         <option>Software</option>
@@ -49,12 +68,12 @@
 
                       <div class="form-group">
                         <label>Quantidade</label>
-                        <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" required autocomplete="off">
+                        <input type="number" class="form-control" name="quantidade" value="<?php echo $quantidade ?>">
                       </div>
 
                       <div class="form-group">
                         <label>Fornecedor</label>
-                        <select class="form-control" name="fornecedor" required>
+                        <select class="form-control" name="fornecedor" value="<?php echo $nroproduto ?>">
                           <option>A</option>
                           <option>B</option>
                           <option>C</option>
@@ -63,8 +82,9 @@
                       </div>
 
                       <div style="text-align: right;">
-                      <button type="submit" class="btn btn-success">Salvar</button>
+                      <button type="submit" class="btn btn-success">Atualizar</button>
                     </div>
+                    <?php } ?>
                   </form>
         </div>
 
