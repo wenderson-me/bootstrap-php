@@ -32,7 +32,7 @@ $id = $_GET['id'];
 
         <div class="container" id="container" style="margin-top: 40px">
                 <h4>Formulario de Cadastro</h4>
-                  <form action="_inserir_produto.php" method="post" style="margin-top: 20px">
+                  <form action="_atualizar_produto.php" method="post" style="margin-top: 20px">
                       <?php
                       $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";
 
@@ -49,6 +49,7 @@ $id = $_GET['id'];
                     <div class="form-group">
                       <label>Nº Produto</label>
                       <input type="number" class="form-control" name="nroproduto" value="<?php echo $nroproduto ?>" disabled>
+                      <input type="number" class="form-control" name="id" value="<?php echo $id ?>" style="display: none">
                     </div>
 
                     <div class="form-group">
