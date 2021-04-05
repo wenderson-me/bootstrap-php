@@ -10,7 +10,27 @@
   <title>Listagem de produtos</title>
 </head>
 <body>
-  
+
+          <div class="container" style="margin-top: 40px">
+              <h3>Lista de produtos</h3> <br>
+
+              <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nº Produto</th>
+                          <th scope="col">Nome produto</th>
+                          <th scope="col">Categoria</th>
+                          <th scope="col">Quantidade</th>
+                          <th scope="col">Fornecedor</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+          </div>
 
 
 
