@@ -43,13 +43,22 @@
                             $quantidade = $array['quantidade'];
                             $fornecedor = $array['fornecedor'];
                           ?>
-
+                          <tr>
                           <td> <?php echo $nroproduto ?></td>
                           <td> <?php echo $nomeproduto ?></td>
                           <td> <?php echo $categoria ?></td>
                           <td> <?php echo $quantidade ?></td>
                           <td> <?php echo $fornecedor ?></td>
-                          <td><a class="btn btn-primary btn-sm" href="editar_produto.php?id=<?php echo $id_estoque?> " role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
+                         
+                          <!-- botões de ações -->
+                          <td>
+                            <a class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar" 
+                            href="editar_produto.php?id=<?php echo $id_estoque?> " role="button"><i class="far fa-edit"></i></a>
+
+                            <a class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Excluir" 
+                            href="deletar_produto.php?id=<?php echo $id_estoque?> " role="button"><i class="far fa-trash-alt"></i></a>
+                        </td>
+                          </tr>
 
                           <?php } ?> <!-- fecha a chave depois das td para preencher as linhas --> 
                         </tr>
