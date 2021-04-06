@@ -35,19 +35,37 @@
             </div>
             <div class="col-sm-6"style="margin-top: 20px">
               <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Adicinar Categoria</h5>
+                    <p class="card-text">Opção para adicionar categoria de produtos.</p>
+                    <a href="adicionar_categoria.php" class="btn btn-primary">Adicionar Categorias</a>
+                  </div>
+                </div>
+              </div>        
+              <div class="col-sm-6"style="margin-top: 20px">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Listar Categoria</h5>
+                    <p class="card-text">Visualizar, editar e excluir as categorias.</p>
+                    <a href="listar_categoria.php" class="btn btn-primary">Categorias</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-6" style="margin-top: 20px">
+              <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Adicinar Categoria</h5>
-                  <p class="card-text">Opção para adicionar categoria de produtos.</p>
-                  <a href="adicionar_categoria.php" class="btn btn-primary">Categorias</a>
+                  <h5 class="card-title">Adicionar Fornecedor</h5>
+                  <p class="card-text">Opção para adicionar fornecedores.</p>
+                  <a href="adicionar_fornecedor.php" class="btn btn-primary">Adicinar Fornecedores</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6" style="margin-top: 20px">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Adicionar Fornecedor</h5>
-                  <p class="card-text">Opção para adicionar fornecedores.</p>
-                  <a href="adicionar_fornecedor.php" class="btn btn-primary">Fornecedores</a>
+                  <h5 class="card-title">Listar Fornecedor</h5>
+                  <p class="card-text">Visualizar, editar e excluir os fornecedores.</p>
+                  <a href="listar_fornecedor.php" class="btn btn-primary">Fornecedores</a>
                 </div>
               </div>
             </div>
