@@ -40,13 +40,20 @@
                     <div class="form-group">
                       <label>Categoria</label>
                       <select class="form-control" name="categoria" required>
-                        <option>Perifericos</option>
-                        <option>Hardware</option>
-                        <option>Software</option>
-                        <option>Celulares</option>
-                      </select>
-                    </div>
+                            <?php
+                              include 'conexao.php';
+                                $sql = "SELECT * FROM `categoria` order by nome_categoria ASC";
+                                $buscar = mysqli_query($conexao, $sql);
 
+                                while ($array = mysqli_fetch_array($buscar)) {
+                                $id_categoria = $array['id_categoria'];
+                                $categoria = $array['nome_categoria'];
+                            ?>
+                            <option><?php echo $categoria ?></option>
+                            <?php } ?>
+
+                       </select>
+                    </div>
                       <div class="form-group">
                         <label>Quantidade</label>
                         <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" required autocomplete="off">
@@ -55,22 +62,26 @@
                       <div class="form-group">
                         <label>Fornecedor</label>
                         <select class="form-control" name="fornecedor" required>
-                          <option>A</option>
-                          <option>B</option>
-                          <option>C</option>
-                          <option>D</option>
+                            <?php
+                                include 'conexao.php';
+                                $sql = "SELECT * FROM `fornecedor`";
+                                $buscar = mysqli_query($conexao, $sql);
+
+                                while ($array = mysqli_fetch_array($buscar)) {
+                                $id_fornecedor = $array['id_fornecedor'];
+                                $fornecedor = $array['nome_fornecedor'];
+                            ?>
+                            <option><?php echo $fornecedor ?></option>
+                            <?php } ?>
+
                         </select>
                       </div>
-
                       <div style="text-align: right;">
                       <a href="index.php" role="button" class="btn btn-primary">Voltar</a>
                       <button type="submit" class="btn btn-success">Salvar</button>
                     </div>
                   </form>
-
         </div>
-
-
 
   <!-- JavaScript -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
