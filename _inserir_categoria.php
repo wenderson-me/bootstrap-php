@@ -6,8 +6,9 @@ $ncategoria = $_POST['ncategoria'];
 
 
 
-echo $ncategoria;
+$sql = "INSERT INTO `categoria`(`categoria`) VALUES ('$ncategoria')";
 
+$insetir = mysqli_query($conexao, $sql);
 
 ?>
 
