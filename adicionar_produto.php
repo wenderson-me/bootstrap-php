@@ -77,7 +77,7 @@
                         </select>
                       </div>
                       <div style="text-align: right;">
-                      <a href="index.php" role="button" class="btn btn-primary">Voltar</a>
+                      <a href="menu.php" role="button" class="btn btn-primary">Voltar</a>
                       <button type="submit" class="btn btn-success">Salvar</button>
                     </div>
                   </form>
