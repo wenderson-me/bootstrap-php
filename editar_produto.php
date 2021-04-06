@@ -60,10 +60,17 @@ $id = $_GET['id'];
                     <div class="form-group">
                       <label>Categoria</label>
                       <select class="form-control" name="categoria" value="<?php echo $categoria ?>">
-                        <option>Perifericos</option>
-                        <option>Hardware</option>
-                        <option>Software</option>
-                        <option>Celulares</option>
+                      <?php
+                              include 'conexao.php';
+                                $sql = "SELECT * FROM `categoria` order by nome_categoria ASC";
+                                $buscar = mysqli_query($conexao, $sql);
+
+                                while ($array = mysqli_fetch_array($buscar)) {
+                                $id_categoria = $array['id_categoria'];
+                                $categoria = $array['nome_categoria'];
+                            ?>
+                            <option><?php echo $categoria ?></option>
+                            <?php } ?>
                       </select>
                     </div>
 
@@ -75,10 +82,17 @@ $id = $_GET['id'];
                       <div class="form-group">
                         <label>Fornecedor</label>
                         <select class="form-control" name="fornecedor" value="<?php echo $nroproduto ?>">
-                          <option>A</option>
-                          <option>B</option>
-                          <option>C</option>
-                          <option>D</option>
+                        <?php
+                                include 'conexao.php';
+                                $sql = "SELECT * FROM `fornecedor`";
+                                $buscar = mysqli_query($conexao, $sql);
+
+                                while ($array = mysqli_fetch_array($buscar)) {
+                                $id_fornecedor = $array['id_fornecedor'];
+                                $fornecedor = $array['nome_fornecedor'];
+                            ?>
+                            <option><?php echo $fornecedor ?></option>
+                            <?php } ?>
                         </select>
                       </div>
 
