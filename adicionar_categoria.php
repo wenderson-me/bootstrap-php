@@ -26,7 +26,7 @@
                   <form action="_inserir_categoria.php" method="post" style="margin-top: 20px">
                     <div class="form-group">
                       <label>Nome Categoria</label>
-                      <input type="number" class="form-control" name="ncategoria" placeholder="Insira o nome da categoria" required>
+                      <input type="text" class="form-control" name="ncategoria" placeholder="Insira o nome da categoria" required>
                     </div>
                       <div style="text-align: right;">
                       <a href="index.php" role="button" class="btn btn-primary">Voltar</a>
