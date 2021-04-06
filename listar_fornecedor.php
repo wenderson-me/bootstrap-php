@@ -10,18 +10,18 @@
    <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
 
-  <title>Listagem de categoria</title>
+  <title>Listagem de fornecedor</title>
 </head>
 <body>
 
           <div class="container" style="margin-top: 40px">
-              <h3>Lista de categorias</h3> <br>
+              <h3>Lista de fornecedor</h3> <br>
 
               <table class="table">
                       <thead>
                         <tr>
                           <th scope="col">ID</th>
-                          <th scope="col">Nome categoria</th>
+                          <th scope="col">Nome fornecedor</th>
                           <th scope="col">Ações</th>
                         </tr>
                       </thead>
@@ -29,24 +29,24 @@
                           <?php
 
                           include 'conexao.php';
-                          $sql = "SELECT * FROM `categoria`";
+                          $sql = "SELECT * FROM `fornecedor`";
                           $busca = mysqli_query($conexao, $sql);
 
                           while ($array = mysqli_fetch_array($busca)) {
-                            $id_categoria = $array['id_categoria'];
-                            $categoria = $array['nome_categoria'];
+                            $id_fornecedor = $array['id_fornecedor'];
+                            $fornecedor = $array['nome_fornecedor'];
                           ?>
                           <tr>
-                          <td> <?php echo $id_categoria ?></td>
-                          <td> <?php echo $categoria ?></td>
+                          <td> <?php echo $id_fornecedor ?></td>
+                          <td> <?php echo $fornecedor ?></td>
                          
                           <!-- botões de ações -->
                           <td>
                             <a class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar" 
-                            href="editar_categoria.php?id=<?php echo $id_categoria?> " role="button"><i class="far fa-edit"></i></a>
+                            href="editar_fornecedor.php?id=<?php echo $id_fornecedor?> " role="button"><i class="far fa-edit"></i></a>
 
                             <a class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Excluir" 
-                            href="deletar_categoria.php?id=<?php echo $id_categoria?> " role="button"><i class="far fa-trash-alt"></i></a>
+                            href="deletar_fornecedor.php?id=<?php echo $id_fornecedor?> " role="button"><i class="far fa-trash-alt"></i></a>
                         </td>
                           </tr>
 
