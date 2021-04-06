@@ -63,7 +63,11 @@
                           <?php } ?> <!-- fecha a chave depois das td para preencher as linhas --> 
                         </tr>
                     </table>
-          </div>
+
+                        <div style="text-align: right;">
+                          <a href="index.php" role="button" class="btn btn-primary">Voltar</a>
+                        </div>
+            </div>
 
 
 
