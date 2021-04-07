@@ -12,8 +12,7 @@
    <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
 </head>
 
-<style type="text/css">
-
+<style>
     #container {
       width: 500px; 
     }

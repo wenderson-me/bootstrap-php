@@ -12,15 +12,11 @@
    <!-- Fontawesome -->
    <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
 
-
-  <style type="text/css">
-
-    #container {
-      width: 500px; 
+  <style>
+  #container {
+    width: 500px; 
     }
   </style>
-
-
 </head>
 <body>  
 
