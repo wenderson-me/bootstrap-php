@@ -15,7 +15,7 @@
 <body>
 
   <div class="container" style="margin-top: 100px">
-    <form>
+    <form action="_inserir_usuario.php" method="post">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
           <div class="row">
@@ -26,20 +26,20 @@
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nome">
+              <input type="text" class="form-control" name="nome" placeholder="Nome">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Usuario">
-            </div>
-          </div>
-          <div class="row align-items-center mt-4">
-            <div class="col">
-              <input type="email" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" name="usuario" placeholder="Usuario">
             </div>
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <input type="password" id="txtSenha" class="form-control" placeholder="Senha">
+              <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <input type="password" id="txtSenha" class="form-control" name="senha" placeholder="Senha">
             </div>
             <div class="col">
               <input type="password" class="form-control" oninput="validaSenha(this)" placeholder="Confirmar senha">
@@ -47,7 +47,7 @@
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <select name="nivelusuario" id="" class="form-control">
+              <select name="nivel" id="" class="form-control">
                 <option value="1">Administrador</option>
                 <option value="2">Vendedor</option>
                 <option value="3">Visitante</option>
