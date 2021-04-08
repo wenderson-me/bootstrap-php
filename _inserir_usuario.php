@@ -11,8 +11,8 @@
     $nivel = $_POST['nivel'];
     $status = 'Ativo';
 
-    echo $sql = "INSERT INTO usuario (nome, usuario, email, senha, nivel, status)
-    values ('$nome', '$usuario', '$email', sha1('$senha'), $nivel, '$status)";
+    $sql = "INSERT INTO usuario (nome, usuario, email, senha, nivel, status)
+    values ('$nome', '$usuario', '$email', sha1('$senha'), $nivel, '$status')";
 
     $inserir = mysqli_query($conexao, $sql);
 ?>
@@ -24,6 +24,6 @@
           <h4>Usuario cadastrado com sucesso!</h4>
 
               <div style="padding-top: 20px">
-                <a href="menu.php" role="button" class="btn btn-sm btn-primary">Voltar para listagem</a> 
+                <a href="cadastro_usuario.php" role="button" class="btn btn-sm btn-primary">Voltar para cadastro</a> 
               </div>
       </div>
