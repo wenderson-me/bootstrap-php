@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de usuario</title>
+  <title>Registre-se</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,8 +25,8 @@
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
           <div class="row">
             <div class="col text-center">
-              <h1>Cadastro de usuario</h1>
-              <p class="text-h3">Preencha os campos para cadastrar um novo usuario. </p>
+              <h1>Registre-se</h1>
+              <p class="text-h3">Preencha os campos para criar um novo usuario. </p>
             </div>
           </div>
           <div class="row align-items-center mt-4">
