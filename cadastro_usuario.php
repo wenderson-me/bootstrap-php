@@ -12,10 +12,16 @@
   <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+body {
+  background: #E5E5E5;
+}
+</style>
+
 <body>
 
   <div class="container" style="margin-top: 100px">
-    <form action="_inserir_usuario.php" method="post">
+    <form action="_inserir_usuario.php" class="shadow-sm p-5 mb-5 bg-white rounded" method="post">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
           <div class="row">
@@ -24,30 +30,30 @@
               <p class="text-h3">Preencha os campos para cadastrar um novo usuario. </p>
             </div>
           </div>
-          <div class="row align-items-center mt-4">
+          <div class="row align-items-center mt-4 ">
             <div class="col">
-              <input type="text" class="form-control" name="nome" placeholder="Nome">
+              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="nome" placeholder="Nome" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" name="usuario" placeholder="Usuario">
-            </div>
-          </div>
-          <div class="row align-items-center mt-4">
-            <div class="col">
-              <input type="email" class="form-control" name="email" placeholder="Email">
+              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="usuario" placeholder="Usuario" required>
             </div>
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <input type="password" id="txtSenha" class="form-control" name="senha" placeholder="Senha">
-            </div>
-            <div class="col">
-              <input type="password" class="form-control" oninput="validaSenha(this)" placeholder="Confirmar senha">
+              <input type="email" class="form-control shadow-sm p-3 bg-white rounded" name="email" placeholder="Email" required>
             </div>
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <select name="nivel" id="" class="form-control">
+              <input type="password" id="txtSenha" class="form-control shadow-sm p-3 bg-white rounded" name="senha" placeholder="Senha" required>
+            </div>
+            <div class="col">
+              <input type="password" class="form-control shadow-sm p-3 bg-white rounded" oninput="validaSenha(this)" placeholder="Confirmar senha" required>
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <select name="nivel" class="form-control shadow-sm rounded" required>
                 <option value="1">Administrador</option>
                 <option value="2">Vendedor</option>
                 <option value="3">Visitante</option>
@@ -58,7 +64,7 @@
             <div class="col">
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
+                  <input type="checkbox" class="form-check-input" required >
                   Eu li e aceito os termos <a href="#">Termos e Condições</a>
                 </label>
               </div>
