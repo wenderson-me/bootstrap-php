@@ -11,12 +11,17 @@
    <!-- Fontawesome -->
    <script src="https://kit.fontawesome.com/af3dc3f21d.js" crossorigin="anonymous"></script>
 </head>
+<style>
+body {
+  background: #E5E5E5;
+}
+</style>
 <body>
 
-        <div class="container" style="margin-top: 100px">
+        <div class="container shadow-sm p-5 mb-5 bg-white rounded" style="margin-top: 100px">
           <div class="row">
             <div class="col-sm-6">
-              <div class="card">
+              <div class="card shadow-sm bg-white rounded">
                 <div class="card-body">
                   <h5 class="card-title">Adicionar Produto</h5>
                   <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
@@ -25,7 +30,7 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card">
+              <div class="card shadow-sm bg-white rounded">
                 <div class="card-body">
                   <h5 class="card-title">Listar de Produtos</h5>
                   <p class="card-text">Visualizar, editar e excluir os produtos.</p>
@@ -34,7 +39,7 @@
               </div>
             </div>
             <div class="col-sm-6"style="margin-top: 20px">
-              <div class="card">
+              <div class="card shadow-sm bg-white rounded">
                   <div class="card-body">
                     <h5 class="card-title">Adicinar Categoria</h5>
                     <p class="card-text">Opção para adicionar categoria de produtos.</p>
@@ -43,7 +48,7 @@
                 </div>
               </div>        
               <div class="col-sm-6"style="margin-top: 20px">
-                <div class="card">
+                <div class="card shadow-sm bg-white rounded">
                   <div class="card-body">
                     <h5 class="card-title">Listar Categoria</h5>
                     <p class="card-text">Visualizar, editar e excluir as categorias.</p>
@@ -52,7 +57,7 @@
                 </div>
               </div>
             <div class="col-sm-6" style="margin-top: 20px">
-              <div class="card">
+              <div class="card shadow-sm bg-white rounded">
                 <div class="card-body">
                   <h5 class="card-title">Adicionar Fornecedor</h5>
                   <p class="card-text">Opção para adicionar fornecedores.</p>
@@ -61,7 +66,7 @@
               </div>
             </div>
             <div class="col-sm-6" style="margin-top: 20px">
-              <div class="card">
+              <div class="card shadow-sm bg-white rounded">
                 <div class="card-body">
                   <h5 class="card-title">Listar Fornecedor</h5>
                   <p class="card-text">Visualizar, editar e excluir os fornecedores.</p>
@@ -69,8 +74,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 20px">
-              <div class="card">
+            <div class="col-sm-6 " style="margin-top: 20px">
+              <div class="card shadow-sm bg-white rounded">
                 <div class="card-body">
                   <h5 class="card-title">Aprovar Usuarios</h5>
                   <p class="card-text">Visualizar, editar e excluir usuarios.</p>

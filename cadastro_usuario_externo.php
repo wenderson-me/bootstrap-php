@@ -31,23 +31,23 @@
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="nome" placeholder="Nome">
+              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="nome" placeholder="Nome" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="usuario" placeholder="Usuario">
-            </div>
-          </div>
-          <div class="row align-items-center mt-4">
-            <div class="col">
-              <input type="email" class="form-control shadow-sm p-3 bg-white rounded" name="email" placeholder="Email">
+              <input type="text" class="form-control shadow-sm p-3 bg-white rounded" name="usuario" placeholder="Usuario" required>
             </div>
           </div>
           <div class="row align-items-center mt-4">
             <div class="col">
-              <input type="password" id="txtSenha" class="form-control shadow-sm p-3 bg-white rounded" name="senha" placeholder="Senha">
+              <input type="email" class="form-control shadow-sm p-3 bg-white rounded" name="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <input type="password" id="txtSenha" class="form-control shadow-sm p-3 bg-white rounded" name="senha" placeholder="Senha" required>
             </div>
             <div class="col">
-              <input type="password" class="form-control shadow-sm p-3 bg-white rounded" oninput="validaSenha(this)" placeholder="Confirmar senha">
+              <input type="password" class="form-control shadow-sm p-3 bg-white rounded" oninput="validaSenha(this)" placeholder="Confirmar senha" required>
             </div>
           </div>
          <!-- <div class="row align-items-center mt-4">
@@ -64,7 +64,7 @@
             <div class="col">
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
+                  <input type="checkbox" class="form-check-input" required>
                   Eu li e aceito os termos <a href="#">Termos e Condições</a>
                 </label>
               </div>
