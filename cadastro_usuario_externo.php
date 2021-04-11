@@ -20,7 +20,7 @@
 <body>
 
   <div class="container" style="margin-top: 100px">
-    <form action="_inserir_usuario_externo.php" class="shadow-sm p-3 mb-5 bg-white rounded" method="post">
+    <form action="_inserir_usuario_externo.php" class="shadow-sm p-5 mb-5 bg-white rounded" method="post">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-8 col-xl-6">
           <div class="row">

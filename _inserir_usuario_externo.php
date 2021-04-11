@@ -8,7 +8,7 @@
     $usuario = $_POST['usuario'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $status = 'Ativo';
+    $status = 'Inativo';
 
     $sql = "INSERT INTO usuario (nome, usuario, email, senha, status)
     values ('$nome', '$usuario', '$email', sha1('$senha'), '$status')";
@@ -26,6 +26,7 @@ body {
   <body>
         <div class="container shadow-sm p-3 mb-5 bg-white rounded" style="width: 500px; margin-top: 20px; text-align: center">
           <h4>Registro feito com sucesso!</h4>
+          <h5>esperado aprovação</h5>
               <div style="padding-top: 20px">
                 <a href="index.php" role="button" class="btn btn-primary btn-lg mt-4"><i class="fas fa-arrow-circle-left"></i></a> 
               </div>

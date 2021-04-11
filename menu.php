@@ -69,6 +69,15 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6" style="margin-top: 20px">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Aprovar Usuarios</h5>
+                  <p class="card-text">Visualizar, editar e excluir usuarios.</p>
+                  <a href="aprovar_usuario.php" class="btn btn-primary">Aprovar usuarios</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div> 
   
